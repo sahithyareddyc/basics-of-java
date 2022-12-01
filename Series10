@@ -1,0 +1,29 @@
+Write a program to generate the following series 95.0, 115.5, 138.0,..., 189.0 
+
+Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format:
+
+Print the series and refer the sample output for formatting
+
+import java.util.*;
+public class Series10
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        double c=2;
+        double s=95.0;
+        System.out.print(s +" ");
+        for(int i=0;i<a;i++)
+        {
+            s=s+20.5;
+            c=s+2;
+            System.out.print(c +" ");
+        }
+        
+    }
+}
