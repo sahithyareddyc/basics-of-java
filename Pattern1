@@ -1,0 +1,29 @@
+Write a Python Program to solve the pattern in dynamic.
+
+Sample Input 1:
+5
+Sample Output 1:
+*****
+*****
+*****
+*****
+*****
+
+import java.util.*;
+public class Pattern1
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,j;
+        int n=sc.nextInt();
+        for(i=1;i<=n;i++)
+        {
+            for(j=1;j<=n;j++)
+            {
+                System.out.printf("*");
+            }
+            System.out.printf("\n");
+        }
+    }
+}
