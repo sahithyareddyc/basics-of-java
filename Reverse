@@ -1,0 +1,26 @@
+Write program to reverse a number is discussed here. We can reverse a number using loop and arithmetic operators in both iterative and recursive approaches. 
+
+Input & Output Format:
+
+Input consists of a integer.
+
+Output consists of reversed input.
+
+import java.util.*;
+public class Reverse
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int n1,s=0, r=0;
+        n1=a;
+        while(a>0)
+        {
+            r=a%10;
+            s=s*10+r;
+            a=a/10;
+        }
+        System.out.println(s);
+    }
+}
