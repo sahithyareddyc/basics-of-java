@@ -1,0 +1,36 @@
+Write a program that asks a user for their birth year encoded as two digits (like "62") and for the current year, also encoded as two digits (like "99"). The program is to correctly write out the user’s age in years.
+
+Input Format:
+
+Input consists of 2 integers. 
+
+The first integer corresponds to the last 2 digits of the birth year. 
+
+The second integer corresponds to the last 2 digits of the current year.
+
+Output Format:
+
+Refer sample input and output for further formatting specifications.
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+import java.util.*;
+public class Agedetect
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Year of Birth");
+        int a=sc.nextInt();
+        System.out.println("Enter Current year");
+        int b=sc.nextInt();
+        if(b<a)
+        {
+            System.out.printf("Your age is %d",(100-a)+b);
+        }
+        else
+        {
+            System.out.printf("Your age is %d",b-a);
+        }
+    }
+}
