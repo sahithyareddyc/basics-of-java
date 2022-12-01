@@ -1,0 +1,28 @@
+Write a program to find the sum of numbers in a given range is discussed here. Given the starting and ending interval, the sum of all the numbers in that range will be displayed as output.
+
+For example,
+
+Input: 1 10
+
+Output: 55
+
+Explanation: 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
+
+import java.util.*;
+public class Sumofnum
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        int s=0;
+        for(int i=n;i<=m;i++)
+        {
+            s=s+i;
+        }
+        
+            System.out.println(s);
+        
+    }
+}
